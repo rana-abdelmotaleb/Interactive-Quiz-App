@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="./img/iconic.png">
+
+  <title>Quiz App</title>
+  <!-- Google Font -->
+  
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="./css/all.min.css">
+  <!-- Custom -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body > 
+    <!-- back ground -->
+  <div>
+     <div class="wave"></div>
+     <div class="wave"></div>
+     <div class="wave"></div>
+  </div>
+
+     <section class="d-flex justify-content-center align-items-center vh-100  mainPage">
+  <div class="myCard p-4 rounded-4 shadow col-9 col-md-8 col-lg-6 mx-auto  ">
+    <!-- title -->
+      <div class="title py-3">
+          <h1 class="text-uppercase text-center">Set Your Quiz</h1>
+      </div>
+      <!-- divider line -->
+    <div class="divider"></div> 
+    <!-- content -->
+      <div class="content mt-3">
+        <!-- choose category -->
+        <h3 class="text-uppercase p-2">Choose The Category</h3>
+        <select class="form-select my-3" aria-label="Default select example" name="category" id="category"> 
+          <option value="9" selected>General Knowledge</option>
+          <option value="21">Sports</option>
+          <option value="25">Art</option>
+          <option value="27">Animals</option>
+          <option value="19">Mathematics</option>
+          <option value="12">Music</option>
+        </select>
+        <!-- choose difficulty -->
+        <h3 class="text-uppercase p-2">Difficulty</h3>
+
+        <div class="form-check mb-2">
+          <input class="form-check-input" type="radio" name="difficulty" id="easy" value="easy" checked>
+          <label class="form-check-label" for="easy">
+            easy
+          </label>
+        </div>
+        <div class="form-check mb-3">
+          <input class="form-check-input" type="radio" name="difficulty" id="medium" value="medium">
+          <label class="form-check-label" for="medium">
+            medium
+          </label>
+        </div>
+        <div class="form-check mb-4">
+          <input class="form-check-input" type="radio" name="difficulty" id="hard" value="hard">
+          <label class="form-check-label" for="hard">
+            hard
+          </label>
+        </div>
+        <!-- number of question -->
+        <div class="input-group mb-4">
+          <input id="amount" name="amount" type="number" class="form-control" placeholder="NUMBER OF QUESTION" aria-label="question"
+            aria-describedby="basic-addon1">
+        </div>
+        <!-- button -->
+        <button id="startBtn" type="button" class="mb-4 fs-5 btn btn-primary px-4 py-1 rounded-5 d-block ms-auto" >
+          Start
+        </button>
+        </div>
+  </div>
+     </section>
+
+    <section class="d-flex justify-content-center align-items-center vh-100 questionPage d-none">
+      <div class="myCard p-4 rounded-4 shadow col-9 col-md-8 col-lg-6 mx-auto ">
+        <!-- title -->
+        <div class="questionsTitle d-flex flex-column">
+           <h2 class="text-center text-uppercase">quiz</h2>
+         <p class="text-danger fw-bold d-block ms-auto">Question <span id="currentNo"></span> of <span id="totalNo"></span></p>
+
+        
+        </div>
+
+        <h3 id="rightAnswer" class="fw-bold text-success mb-3 text-uppercase d-none"> right answer</h3>
+        <h3 id="wrongeAnswer" class="fw-bold text-danger mb-3 text-uppercase d-none"> wronge answer</h3>
+        <!-- divider -->
+         <div class="divider"></div> 
+        <!-- qustions -->
+        <div class="questions px-3  py-5">
+          <p class="fw-bold  fs-4 ">Q: <span id="quest"></span></p>
+         <div class="inner"></div>
+         
+        </div>
+          <!-- button -->
+        <button id="SubmitBtn" type="button" class="mb-4 fs-5 btn btn-primary px-4 py-1 rounded-5 d-block ms-auto" >
+          submit
+        </button>
+        
+        </div>
+    
+    </section>
+
+     <section class="d-flex justify-content-center align-items-center vh-100  scorePage d-none">
+  <div class="myCard p-4 rounded-4 shadow col-9 col-md-8 col-lg-6 mx-auto ">
+    <p id="myScore" class="fw-bold fs-1 text-center"></p>
+        <a href="#" id="retryBtn" class="btn btn-success btn-lg rounded-pill animate__animated animate__fadeInUp">Try Again</a>
+
+  </div></section>
+
+  <script type="module" src="./js/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+</html>
