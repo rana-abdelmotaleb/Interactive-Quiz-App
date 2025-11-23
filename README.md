@@ -13,10 +13,6 @@ A dynamic quiz application built using **HTML, CSS, and JavaScript**. Users can 
 - Fully responsive with animated background and wave effects.  
 - Styled with **Bootstrap** and custom CSS.  
 
-## Demo
-
-Add a screenshot or GIF of the quiz app here to showcase its appearance.  
-
 ## Technologies
 
 - HTML5  
@@ -44,3 +40,4 @@ quiz-app/
 1. Clone the repo:
    git clone https://github.com/YOUR_USERNAME/interactive-quiz.git
 2. Open `index.html` in your browser.
+
