@@ -38,6 +38,7 @@ quiz-app/
 
 ## How to Run
 1. Clone the repo:
-   git clone https://github.com/YOUR_USERNAME/interactive-quiz.git
+git clone https://github.com/rana-abdelmotaleb/Interactive-Quiz-App.git
 2. Open `index.html` in your browser.
+
 
